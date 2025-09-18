@@ -19,7 +19,7 @@ beforeEach(() => {
 });
  
 describe('Car Wash Services Automation Suite', () => {
-  it('should test search bar functionality', () => {
+  it('Should test search bar functionality!!', () => {
     cy.get('#main-auto').type("car wash near me{enter}");
     cy.url().should('include','Car-Wash');
     carWash.filterByRating();
