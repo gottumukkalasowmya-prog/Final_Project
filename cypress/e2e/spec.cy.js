@@ -15,7 +15,6 @@ cy.fixture('data').then(function(data){
 beforeEach(() => {
   cy.visit('https://www.justdial.com/');
 });
- 
 describe('Car Wash Services Automation Suite', () => {
   it('Should test search bar functionality!!', () => {
     cy.get('#main-auto').type("car wash near me{enter}");
