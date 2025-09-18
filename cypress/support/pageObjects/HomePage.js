@@ -2,11 +2,10 @@ class HomePage {
   navigateViaMenu(menuItem) {
     cy.contains(menuItem).click();
   }
- 
   verifyHomePageLoaded() {
     cy.url().should('include', 'home');
   }
-goBackToHome() {
+  goBackToHome() {
     cy.go('back');
   }
 }
