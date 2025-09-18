@@ -3,7 +3,9 @@ class CarWashPage {
     cy.get('#all_filters_btn').click();
     cy.get('[aria-label="Rating"]').click();
     cy.get('[aria-label="4.0+"]').click();
-    cy.get('.more_filter_btnbox > .bluefill_animate').click();
+    cy.get('.more_filter_btnbox').within(() => {
+    cy.get('.bluefill_animate').click();
+  });
     cy.wait(3000)
     cy.get('.resultbox').each(($el, index) => {
   if (index < 5) {

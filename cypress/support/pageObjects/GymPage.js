@@ -1,8 +1,8 @@
 class GymPage {
   navigateToGym() {
-    cy.visit('https://www.justdial.com/Chennai/Gyms');
+    cy.get('[title="Gym in Chennai"]').eq(0).click();
   }
-
+ 
   extractSubMenuItems() {
     const items = [];
     cy.get('#filter_ul').each(($el) => {
@@ -12,5 +12,5 @@ class GymPage {
     });
   }
 }
-
+ 
 export default GymPage;
