@@ -8,7 +8,7 @@ class CarWashPage {
   });
     cy.wait(3000)
     cy.get('.resultbox').each(($el, index) => {
-  if (index < 5) {
+    if (index < 5) {
     const name = $el.find('h3.resultbox_title_anchor').text().trim()
     const phone = $el.find('span.callcontent.callNowAnchor').text().trim()
     cy.log(`Result ${index + 1}`)
