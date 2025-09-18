@@ -2,8 +2,6 @@ import HomePage from '../support/pageObjects/HomePage';
 import CarWashPage from '../support/pageObjects/CarWashPage';
 import FreeListingPage from '../support/pageObjects/FreeListingPage';
 import GymPage from '../support/pageObjects/GymPage';
- 
- 
 const home = new HomePage();
 const carWash = new CarWashPage();
 const freeListing = new FreeListingPage();
