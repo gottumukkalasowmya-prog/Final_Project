@@ -1,6 +1,6 @@
 class GymPage {
   navigateToGym() {
-    cy.get('[title="Gym in Chennai"]').eq(0).click();
+    cy.get('[title="Gym in Mumbai"]').eq(0).click();
   }
   extractSubMenuItems() {
     const items = [];
