@@ -14,6 +14,7 @@ cy.fixture('data').then(function(data){
 })
 beforeEach(() => {
   cy.visit('https://www.justdial.com/');
+  cy.wait(3000);
 });
 describe('Car Wash Services Automation Suite', () => {
   it('Should test search bar functionality!!', () => {
@@ -44,7 +45,7 @@ describe('Car Wash Services Automation Suite', () => {
   });
  
   Cypress.on('uncaught:exception', (err, runnable) => {
-  return false;
+    return false;
 });
  
 });
