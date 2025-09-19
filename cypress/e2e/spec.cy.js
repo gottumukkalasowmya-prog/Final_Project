@@ -45,7 +45,7 @@ describe('Car Wash Services Automation Suite', () => {
   });
  
   Cypress.on('uncaught:exception', (err, runnable) => {
-  return false;
+    return false;
 });
  
 });
