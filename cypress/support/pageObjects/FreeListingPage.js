@@ -1,4 +1,7 @@
 class FreeListingPage {
+  visit(){
+    cy.visit('https://www.justdial.com/')
+  }
   navigateToForm() {
     cy.get('#header_freelisting').click()
   }
@@ -13,16 +16,6 @@ class FreeListingPage {
     cy.get('.entermobilenumber_error__text__uPM09').should('be.visible').then($text=>{
       cy.log($text.text());
     })
-  }
-  triggerAlert() {
-    cy.window().then((win) => {
-      win.alert('Invalid input!');
-    });
-  }
-  captureAlertMessage() {
-    cy.on('window:alert', (str) => {
-      expect(str).to.equal('Invalid input!');
-    });
   }
 }
  

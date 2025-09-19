@@ -1,5 +1,9 @@
 class CarWashPage {
+  visit(){
+    cy.visit('https://www.justdial.com/')
+  }
   filterByRating() {
+    cy.get('#main-auto').type("car wash near me{enter}");
     cy.get('#all_filters_btn').click();
     cy.get('[aria-label="Rating"]').click();
     cy.get('[aria-label="4.0+"]').click();
